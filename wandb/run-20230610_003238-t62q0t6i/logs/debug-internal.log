@@ -1,0 +1,1246 @@
+2023-06-10 00:32:38,658 INFO    StreamThr :65442 [internal.py:wandb_internal():86] W&B internal server running at pid: 65442, started at: 2023-06-10 00:32:38.658342
+2023-06-10 00:32:38,659 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status
+2023-06-10 00:32:38,662 INFO    WriterThread:65442 [datastore.py:open_for_write():85] open: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/run-t62q0t6i.wandb
+2023-06-10 00:32:38,665 DEBUG   SenderThread:65442 [sender.py:send():369] send: header
+2023-06-10 00:32:38,690 DEBUG   SenderThread:65442 [sender.py:send():369] send: run
+2023-06-10 00:32:38,954 INFO    SenderThread:65442 [dir_watcher.py:__init__():211] watching files in: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files
+2023-06-10 00:32:38,954 INFO    SenderThread:65442 [sender.py:_start_run_threads():1100] run started: t62q0t6i with start time 1686375158.65719
+2023-06-10 00:32:38,954 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: summary_record
+2023-06-10 00:32:38,954 INFO    SenderThread:65442 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-06-10 00:32:38,956 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: check_version
+2023-06-10 00:32:38,957 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: check_version
+2023-06-10 00:32:39,166 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: run_start
+2023-06-10 00:32:39,175 DEBUG   HandlerThread:65442 [system_info.py:__init__():31] System info init
+2023-06-10 00:32:39,175 DEBUG   HandlerThread:65442 [system_info.py:__init__():46] System info init done
+2023-06-10 00:32:39,175 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:32:39,175 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:32:39,175 INFO    HandlerThread:65442 [system_monitor.py:probe():201] Collecting system info
+2023-06-10 00:32:39,176 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:32:39,176 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:32:39,176 DEBUG   HandlerThread:65442 [system_info.py:probe():195] Probing system
+2023-06-10 00:32:39,176 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:32:39,178 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:32:39,179 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:32:39,183 DEBUG   HandlerThread:65442 [system_info.py:_probe_git():180] Probing git
+2023-06-10 00:32:39,211 DEBUG   HandlerThread:65442 [system_info.py:_probe_git():188] Probing git done
+2023-06-10 00:32:39,211 DEBUG   HandlerThread:65442 [system_info.py:probe():240] Probing system done
+2023-06-10 00:32:39,211 DEBUG   HandlerThread:65442 [system_monitor.py:probe():210] {'os': 'macOS-13.4-arm64-arm-64bit', 'python': '3.10.0', 'heartbeatAt': '2023-06-10T05:32:39.176567', 'startedAt': '2023-06-10T05:32:38.652391', 'docker': None, 'cuda': None, 'args': None, 'state': 'running', 'program': '<python with no main file>', 'git': {'remote': 'https://github.com/srujanreddyj/mlops-project.git', 'commit': '346f619558218954fed04fdc3c6990123b83dcd9'}, 'email': 'jsrujanreddy@gmail.com', 'root': '/Users/sjabbireddy/mlops-project', 'host': 'W2N6QX6RWR', 'username': 'sjabbireddy', 'executable': '/Users/sjabbireddy/.pyenv/versions/3.10.0/bin/python', 'cpu_count': 10, 'cpu_count_logical': 10, 'disk': {'total': 460.4317207336426, 'used': 8.443897247314453}, 'gpuapple': {'type': 'arm', 'vendor': 'Apple'}, 'memory': {'total': 32.0}}
+2023-06-10 00:32:39,211 INFO    HandlerThread:65442 [system_monitor.py:probe():211] Finished collecting system info
+2023-06-10 00:32:39,211 INFO    HandlerThread:65442 [system_monitor.py:probe():214] Publishing system info
+2023-06-10 00:32:39,211 DEBUG   HandlerThread:65442 [system_info.py:_save_pip():51] Saving list of pip packages installed into the current environment
+2023-06-10 00:32:39,212 DEBUG   HandlerThread:65442 [system_info.py:_save_pip():67] Saving pip packages done
+2023-06-10 00:32:39,212 INFO    HandlerThread:65442 [system_monitor.py:probe():216] Finished publishing system info
+2023-06-10 00:32:39,215 DEBUG   SenderThread:65442 [sender.py:send():369] send: files
+2023-06-10 00:32:39,215 INFO    SenderThread:65442 [sender.py:_save_file():1354] saving file wandb-metadata.json with policy now
+2023-06-10 00:32:39,223 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:32:39,223 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:32:39,223 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:32:39,224 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:32:39,224 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:32:39,224 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:32:39,224 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:32:39,224 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:32:39,224 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:32:39,224 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:32:39,368 DEBUG   SenderThread:65442 [sender.py:send():369] send: telemetry
+2023-06-10 00:32:39,654 INFO    wandb-upload_0:65442 [upload_job.py:push():133] Uploaded file /var/folders/lt/lwh95s7519lckh62dtd3s00m0000gp/T/tmpikez46ywwandb/48ts0843-wandb-metadata.json
+2023-06-10 00:32:39,955 INFO    Thread-12 :65442 [dir_watcher.py:_on_file_created():272] file/dir created: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/requirements.txt
+2023-06-10 00:32:39,956 INFO    Thread-12 :65442 [dir_watcher.py:_on_file_created():272] file/dir created: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/wandb-metadata.json
+2023-06-10 00:32:39,956 INFO    Thread-12 :65442 [dir_watcher.py:_on_file_created():272] file/dir created: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/wandb-summary.json
+2023-06-10 00:32:40,377 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:32:40,377 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:32:40,377 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:32:40,377 DEBUG   SenderThread:65442 [sender.py:send():369] send: telemetry
+2023-06-10 00:32:40,377 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:32:44,387 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:32:49,403 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:32:54,227 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:32:54,228 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:32:55,293 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:33:00,305 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:33:05,318 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:33:09,228 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:33:09,229 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:33:11,301 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:33:12,075 INFO    Thread-12 :65442 [dir_watcher.py:_on_file_modified():289] file/dir modified: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/config.yaml
+2023-06-10 00:33:16,404 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:33:21,422 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:33:24,233 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:33:24,233 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:33:27,306 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:33:32,325 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:33:37,342 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:33:39,240 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:33:39,241 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:33:43,319 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:33:48,339 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:33:53,358 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:33:54,243 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:33:54,243 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:33:56,477 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:33:56,477 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:33:56,477 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:33:56,477 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:33:56,478 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:33:56,478 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:33:56,480 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:33:56,483 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:33:56,484 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:33:56,690 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:33:56,690 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:33:56,690 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:33:56,690 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:33:56,690 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:33:56,690 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:33:56,690 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:33:56,690 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:33:57,343 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:33:57,343 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:33:57,343 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:33:57,343 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:33:59,347 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:34:00,958 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:34:00,958 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:34:00,958 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:34:00,958 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:34:00,959 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:34:00,959 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:34:00,959 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:34:00,962 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:34:00,963 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:34:00,972 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:34:00,972 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:34:00,972 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:34:00,973 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:34:00,974 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:34:00,974 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:34:00,974 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:34:00,974 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:34:01,739 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:34:01,739 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:34:01,739 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:34:01,739 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:34:04,749 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:34:08,787 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:34:08,787 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:34:08,787 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:34:08,787 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:34:08,788 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:34:08,788 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:34:08,790 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:34:08,792 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:34:08,792 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:34:08,792 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:34:08,793 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:34:08,793 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:34:08,793 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:34:08,793 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:34:08,793 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:34:08,793 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:34:08,793 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:34:09,601 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:34:09,601 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:34:09,602 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:34:09,602 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:34:09,602 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:34:09,602 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:34:09,602 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:34:09,603 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:34:09,603 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:34:09,603 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:34:09,603 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:34:09,604 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:34:09,604 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:34:09,608 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:34:09,610 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:34:09,673 DEBUG   SenderThread:65442 [sender.py:send():369] send: telemetry
+2023-06-10 00:34:09,673 DEBUG   SenderThread:65442 [sender.py:send():369] send: telemetry
+2023-06-10 00:34:10,630 DEBUG   SenderThread:65442 [sender.py:send():369] send: telemetry
+2023-06-10 00:34:10,630 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:34:10,882 DEBUG   SenderThread:65442 [sender.py:send():369] send: telemetry
+2023-06-10 00:34:10,930 DEBUG   SenderThread:65442 [sender.py:send():369] send: telemetry
+2023-06-10 00:34:11,048 DEBUG   SenderThread:65442 [sender.py:send():369] send: telemetry
+2023-06-10 00:34:11,049 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:34:11,049 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:34:11,049 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:34:11,049 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:34:11,049 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:34:11,049 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:34:11,049 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:34:11,049 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:34:11,049 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:34:11,049 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:34:11,050 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:34:11,050 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:34:11,071 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:34:11,071 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:34:11,071 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:34:11,071 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:34:11,071 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:34:11,072 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:34:11,072 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:34:11,075 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:34:11,075 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:34:11,076 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:34:11,076 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:34:11,076 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:34:11,076 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:34:11,076 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:34:11,076 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:34:11,076 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:34:11,076 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:34:11,301 INFO    Thread-12 :65442 [dir_watcher.py:_on_file_created():272] file/dir created: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/output.log
+2023-06-10 00:34:11,837 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:34:11,837 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:34:11,837 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:34:11,837 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:34:13,309 INFO    Thread-12 :65442 [dir_watcher.py:_on_file_modified():289] file/dir modified: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/output.log
+2023-06-10 00:34:13,880 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:34:13,880 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:34:13,880 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:34:13,880 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:34:13,881 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:34:13,881 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:34:13,883 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:34:13,884 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:34:13,885 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:34:15,858 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:34:16,321 INFO    Thread-12 :65442 [dir_watcher.py:_on_file_modified():289] file/dir modified: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/config.yaml
+2023-06-10 00:34:20,956 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:34:24,252 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:34:24,253 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:34:25,958 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:34:25,958 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:34:25,958 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:34:25,958 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:34:25,958 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:34:25,959 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:34:25,959 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:34:25,959 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:34:25,959 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:34:25,959 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:34:25,959 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:34:25,959 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:34:25,960 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:34:25,980 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:34:25,980 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:34:25,980 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:34:25,980 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:34:25,981 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:34:25,981 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:34:25,981 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:34:25,984 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:34:25,984 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:34:25,985 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:34:25,985 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:34:25,985 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:34:25,985 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:34:25,985 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:34:25,985 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:34:25,985 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:34:25,985 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:34:26,713 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:34:26,713 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:34:26,714 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:34:26,714 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:34:26,714 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:34:26,714 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:34:26,714 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:34:26,714 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:34:26,715 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:34:26,715 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:34:26,715 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:34:26,715 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:34:26,715 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:34:26,715 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:34:26,715 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:34:26,715 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:34:26,717 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:34:28,666 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:34:28,666 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:34:28,666 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:34:28,666 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:34:28,667 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:34:28,667 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:34:28,667 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:34:28,669 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:34:28,671 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:34:28,859 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:34:28,859 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:34:28,859 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:34:28,859 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:34:28,859 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:34:28,860 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:34:28,860 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:34:28,860 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:34:29,368 INFO    Thread-12 :65442 [dir_watcher.py:_on_file_modified():289] file/dir modified: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/output.log
+2023-06-10 00:34:29,512 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:34:29,512 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:34:29,512 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:34:29,513 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:34:31,523 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:34:36,542 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:34:39,258 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:34:39,259 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:34:42,330 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:34:47,346 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:34:52,367 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:34:54,258 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:34:54,258 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:34:58,328 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:35:03,348 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:35:08,287 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:35:08,287 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:35:08,287 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:35:08,287 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:35:08,287 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:35:08,287 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:35:08,288 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:35:08,290 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:35:08,292 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:35:08,364 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:35:08,528 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:35:08,528 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:35:08,528 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:35:08,528 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:35:08,528 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:35:08,529 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:35:08,529 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:35:08,529 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:35:09,109 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:35:09,109 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:35:09,109 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:35:09,109 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:35:09,262 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:35:09,262 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:35:14,349 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:35:19,363 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:35:24,267 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:35:24,268 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:35:25,334 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:35:30,357 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:35:35,377 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:35:39,269 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:35:39,271 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:35:41,332 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:35:46,351 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:35:51,367 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:35:54,272 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:35:54,273 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:35:57,348 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:36:02,365 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:36:07,382 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:36:09,276 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:36:09,278 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:36:12,392 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:36:17,415 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:36:22,433 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:36:24,280 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:36:24,281 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:36:28,366 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:36:33,381 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:36:37,533 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:36:37,533 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:36:37,533 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:36:37,534 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:36:37,537 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:36:37,539 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:36:37,543 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:36:37,545 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:36:37,547 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:36:37,566 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:36:37,566 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:36:37,566 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:36:37,567 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:36:37,568 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:36:37,568 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:36:37,569 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:36:37,571 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:36:38,397 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:36:38,397 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:36:38,397 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:36:38,397 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:36:38,397 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:36:39,284 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:36:39,286 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:36:44,369 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:36:49,387 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:36:50,830 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:36:50,830 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:36:50,830 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:36:50,830 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:36:50,831 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:36:50,833 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:36:50,839 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:36:50,842 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:36:50,844 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:36:51,054 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: log_artifact
+2023-06-10 00:36:51,055 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: log_artifact
+2023-06-10 00:36:51,236 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-10 00:36:51,236 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:36:51,236 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:36:51,236 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:36:51,236 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:36:51,236 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:36:51,237 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:36:51,237 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:36:51,237 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:36:51,623 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:36:51,623 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:36:51,624 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:36:51,981 INFO    Thread-12 :65442 [dir_watcher.py:_on_file_created():272] file/dir created: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/media/table/Table Name_0_61e917be0648fc155eef.table.json
+2023-06-10 00:36:51,982 INFO    Thread-12 :65442 [dir_watcher.py:_on_file_created():272] file/dir created: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/media/table
+2023-06-10 00:36:51,982 INFO    Thread-12 :65442 [dir_watcher.py:_on_file_created():272] file/dir created: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/media
+2023-06-10 00:36:52,014 INFO    wandb-upload_0:65442 [upload_job.py:push():91] Uploaded file /Users/sjabbireddy/Library/Application Support/wandb/artifacts/staging/tmppvy2dat1
+2023-06-10 00:36:52,077 ERROR   wandb-upload_1:65442 [internal_api.py:upload_file():2192] upload_file exception https://storage.googleapis.com/wandb-production.appspot.com/srujan_learning/mlops-course/t62q0t6i/media/table/Table%20Name_0_61e917be0648fc155eef.table.json?Expires=1686461812&GoogleAccessId=wandb-production%40appspot.gserviceaccount.com&Signature=C%2BAGBAl%2FfXIH5PQjJmxhaV%2BNR%2FG52FrGZc2EG1nDiBtYVLbGFPVZoAQYXGTH%2FASYoB%2BbbCgc4DxDycv8PmtbN2Twwj4%2Fx5R0Rsmh7X5pHceRAo%2FvkNaBwWL%2BUssIGzyHQ65BSvn1yup1HmvdZqUyaVVoMd9OapXiXIJQUHys0A3%2Bc7PK65crJLINT5%2FXIHIRi4WOZmzm3m3wPkTdl2YzWWtXZ%2Br%2BV%2BgDZEHgNaZuyi2RSfgnXQ5zd9XMU2F%2FRXT4F64eP3fszdjCy4SW4YgEWxbtDnwOnRVvrhHFo%2Ft0zHVJOGsgLnXIsuYPYh76mWotgKGJQu9ht9uWW5uCVFpSxg%3D%3D: ('Connection aborted.', RemoteDisconnected('Remote end closed connection without response'))
+2023-06-10 00:36:52,077 ERROR   wandb-upload_1:65442 [internal_api.py:upload_file():2194] upload_file request headers: {'User-Agent': 'python-requests/2.30.0', 'Accept-Encoding': 'gzip, deflate', 'Accept': '*/*', 'Connection': 'keep-alive', 'Content-Length': '137'}
+2023-06-10 00:36:52,077 ERROR   wandb-upload_1:65442 [internal_api.py:upload_file():2196] upload_file response body: 
+2023-06-10 00:36:52,679 INFO    SenderThread:65442 [sender.py:send_request_log_artifact():1414] logged artifact run-t62q0t6i-TableName - {'id': 'QXJ0aWZhY3Q6NDgzMzUzMTEx', 'digest': '5d9e42ded622feb868918190d4a1e7fe', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjc1ODIwMzE0', 'latestArtifact': None}, 'version': 'latest'}
+2023-06-10 00:36:52,680 DEBUG   SenderThread:65442 [sender.py:send():369] send: files
+2023-06-10 00:36:52,680 INFO    SenderThread:65442 [sender.py:_save_file():1354] saving file media/table/Table Name_0_61e917be0648fc155eef.table.json with policy now
+2023-06-10 00:36:52,681 DEBUG   SenderThread:65442 [sender.py:send():369] send: history
+2023-06-10 00:36:52,682 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: summary_record
+2023-06-10 00:36:52,683 INFO    SenderThread:65442 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-06-10 00:36:52,684 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:36:52,983 INFO    Thread-12 :65442 [dir_watcher.py:_on_file_modified():289] file/dir modified: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/wandb-summary.json
+2023-06-10 00:36:53,508 INFO    wandb-upload_1:65442 [upload_job.py:push():133] Uploaded file /var/folders/lt/lwh95s7519lckh62dtd3s00m0000gp/T/tmpikez46ywwandb/2k45efcm-media/table/Table Name_0_61e917be0648fc155eef.table.json
+2023-06-10 00:36:54,019 INFO    wandb-upload_0:65442 [upload_job.py:push():133] Uploaded file /var/folders/lt/lwh95s7519lckh62dtd3s00m0000gp/T/tmpikez46ywwandb/lyd5nnap-media/table/Table Name_0_61e917be0648fc155eef.table.json
+2023-06-10 00:36:54,286 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:36:54,286 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:36:55,342 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:37:00,359 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:37:05,376 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:37:09,296 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:37:09,298 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:37:11,365 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:37:16,381 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:37:21,395 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:37:24,294 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:37:24,294 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:37:27,363 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:37:32,383 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:37:37,395 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:37:39,298 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:37:39,299 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:37:43,368 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:37:48,386 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:37:53,401 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:37:54,304 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:37:54,305 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:37:59,383 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:38:04,401 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:38:09,305 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:38:09,306 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:38:10,374 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:38:15,391 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:38:20,411 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:38:24,306 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:38:24,307 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:38:26,374 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:38:31,386 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:38:36,397 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:38:39,309 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:38:39,310 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:38:42,388 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:38:47,408 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:38:52,426 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:38:54,313 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:38:54,314 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:38:58,387 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:39:03,400 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:39:08,424 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:39:09,317 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:39:09,317 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:39:14,380 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:39:19,392 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:39:23,607 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:39:23,607 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:39:23,607 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:39:23,607 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:39:23,608 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:39:23,608 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:39:23,610 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:39:23,612 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:39:23,613 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:39:24,354 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:39:24,354 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:39:24,400 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:39:27,182 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:39:27,182 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:39:27,182 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:39:27,182 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:39:27,182 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:39:27,182 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:39:27,183 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:39:27,183 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:39:27,280 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:39:27,280 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:39:27,280 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:39:27,280 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:39:30,291 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:39:33,834 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:39:33,835 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:39:33,835 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:39:33,835 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:39:33,835 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:39:33,836 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:39:33,836 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:39:33,839 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:39:33,840 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:39:33,867 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:39:33,867 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:39:33,867 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:39:33,867 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:39:33,868 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:39:33,868 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:39:33,868 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:39:33,868 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:39:34,639 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:39:34,639 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:39:34,639 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:39:34,640 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:39:35,645 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:39:39,359 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:39:39,360 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:39:41,436 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:39:46,455 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:39:51,467 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:39:54,360 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:39:54,361 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:39:57,436 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:40:02,456 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:40:07,473 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:40:09,360 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:40:09,361 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:40:13,431 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:40:18,448 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:40:23,468 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:40:24,364 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:40:24,365 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:40:29,438 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:40:34,457 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:40:39,367 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:40:39,367 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:40:40,423 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:40:43,336 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:40:43,336 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:40:43,336 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:40:43,336 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:40:43,336 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:40:43,336 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:40:43,338 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:40:43,339 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:40:43,340 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:40:43,372 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:40:43,372 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:40:43,372 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:40:43,373 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:40:43,373 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:40:43,374 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:40:43,374 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:40:43,374 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:40:44,148 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:40:44,148 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:40:44,148 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:40:44,148 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:40:46,155 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:40:51,173 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:40:54,372 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:40:54,372 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:40:56,430 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:41:01,447 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:41:03,821 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:41:03,822 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:41:03,822 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:41:03,822 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:41:03,822 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:41:03,822 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:41:03,822 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:41:03,824 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:41:03,826 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:41:03,849 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:41:03,850 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:41:03,850 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:41:03,850 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:41:03,850 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:41:03,850 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:41:03,850 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:41:03,850 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:41:04,628 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:41:04,628 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:41:04,628 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:41:04,628 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:41:06,638 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:41:09,374 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:41:09,375 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:41:12,433 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:41:17,454 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:41:22,469 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:41:24,378 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:41:24,378 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:41:28,435 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:41:33,456 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:41:34,982 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:41:34,983 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:41:34,983 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:41:34,983 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:41:34,984 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:41:34,986 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:41:34,989 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:41:34,991 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:41:34,992 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:41:35,014 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:41:35,014 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:41:35,014 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:41:35,015 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:41:35,015 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:41:35,015 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:41:35,016 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:41:35,016 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:41:35,787 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:41:35,787 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:41:35,787 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:41:35,787 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:41:38,798 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:41:39,386 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:41:39,387 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:41:44,466 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:41:49,483 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:41:54,385 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:41:54,386 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:41:55,439 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:42:00,450 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:42:05,466 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:42:09,391 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:42:09,393 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:42:11,447 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:42:16,464 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:42:21,482 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:42:24,394 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:42:24,395 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:42:27,473 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:42:32,487 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:42:37,503 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:42:39,402 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:42:39,403 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:42:43,486 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:42:48,503 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:42:53,521 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:42:54,406 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:42:54,408 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:42:59,482 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:43:04,501 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:43:09,408 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:43:09,409 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:43:10,457 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:43:15,474 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:43:20,486 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:43:24,415 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:43:24,416 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:43:26,483 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:43:31,501 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:43:36,524 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:43:39,417 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:43:39,417 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:43:42,484 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:43:47,506 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:43:52,520 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:43:54,425 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:43:54,428 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:43:58,504 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:44:03,527 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:44:08,548 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:44:09,427 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:44:09,429 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:44:14,515 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:44:19,530 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:44:24,432 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:44:24,434 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:44:25,501 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:44:30,510 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:44:35,526 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:44:39,435 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:44:39,435 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:44:41,493 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:44:46,512 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:44:51,534 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:44:54,440 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:44:54,441 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:44:57,519 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:45:02,533 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:45:07,549 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:45:09,446 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:45:09,447 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:45:13,520 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:45:18,535 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:45:23,553 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:45:24,451 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:45:24,452 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:45:29,533 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:45:34,551 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:45:39,455 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:45:39,456 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:45:40,515 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:45:45,532 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:45:50,544 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:45:54,455 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:45:54,456 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:45:56,522 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:46:01,539 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:46:06,562 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:46:09,458 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:46:09,459 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:46:12,527 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:46:17,544 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:46:22,560 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:46:24,462 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:46:24,463 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:46:28,537 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:46:33,552 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:46:38,573 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:46:39,466 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:46:39,467 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:46:44,546 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:46:49,560 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:46:54,470 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:46:54,472 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:46:55,531 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:47:00,544 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:47:05,565 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:47:09,471 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:47:09,472 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:47:11,544 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:47:16,562 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:47:21,586 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:47:24,478 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:47:24,480 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:47:27,553 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:47:32,575 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:47:37,592 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:47:39,481 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:47:39,482 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:47:43,558 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:47:48,580 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:47:53,604 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:47:54,483 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:47:54,484 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:47:59,568 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:48:04,588 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:48:09,486 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:48:09,487 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:48:10,545 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:48:15,561 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:48:20,578 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:48:24,490 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:48:24,491 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:48:26,561 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:48:31,583 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:48:36,601 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:48:39,491 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:48:39,492 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:48:42,594 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:48:47,612 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:48:52,637 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:48:54,495 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:48:54,496 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:48:58,557 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:48:58,557 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:48:58,557 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:48:58,557 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:48:58,558 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:48:58,558 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:48:58,561 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:48:58,562 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:48:58,563 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:48:58,574 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:49:03,597 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:49:08,612 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:49:09,501 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:49:09,501 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:49:14,463 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:49:14,463 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:49:14,463 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:49:14,464 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:49:14,464 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:49:14,464 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:49:14,464 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:49:14,464 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:49:14,464 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:49:14,465 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:49:14,465 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:49:14,465 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:49:14,465 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:49:19,478 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:49:24,490 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:49:24,507 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:49:24,507 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:49:29,429 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:49:29,429 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:49:29,429 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:49:29,429 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:49:29,429 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:49:29,430 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:49:29,431 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:49:29,432 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:49:29,433 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:49:29,445 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:49:29,446 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:49:29,446 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:49:29,446 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:49:29,447 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:49:29,447 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:49:29,447 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:49:29,448 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:49:30,269 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:49:30,270 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:49:30,270 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:49:30,270 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:49:30,270 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:49:35,290 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:49:39,512 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:49:39,514 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:49:40,570 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:49:45,585 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:49:50,603 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:49:54,514 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:49:54,515 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:49:56,582 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:50:01,595 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:50:06,611 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:50:09,516 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:50:09,516 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:50:12,579 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:50:17,601 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:50:22,622 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:50:23,830 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:50:23,831 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:50:23,831 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:50:23,831 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:50:23,832 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:50:23,832 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:50:23,833 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:50:23,835 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:50:23,837 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:50:24,270 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:50:24,270 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:50:24,270 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:50:24,270 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:50:24,270 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:50:24,270 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:50:24,271 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:50:24,271 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:50:24,687 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:50:24,687 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:50:24,687 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:50:24,687 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:50:24,687 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:50:24,687 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:50:27,756 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:50:32,773 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:50:33,237 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:50:33,237 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:50:33,237 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:50:33,237 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:50:33,237 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:50:33,238 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:50:33,238 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:50:33,240 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:50:33,241 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:50:33,255 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:50:33,255 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:50:33,255 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:50:33,255 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:50:33,255 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:50:33,255 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:50:33,255 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:50:33,256 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:50:34,051 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:50:34,051 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:50:34,051 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:50:34,052 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:50:38,069 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:50:39,524 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:50:39,525 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:50:42,440 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:50:42,440 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:50:42,440 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:50:42,440 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:50:42,441 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:50:42,441 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:50:42,441 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:50:42,445 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:50:42,446 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:50:42,949 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:50:42,950 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:50:42,950 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:50:42,950 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:50:42,950 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:50:42,950 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:50:42,950 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:50:42,951 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:50:43,425 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:50:43,425 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:50:43,425 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:50:43,426 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:50:43,426 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:50:47,986 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:50:47,986 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:50:47,986 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:50:47,986 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:50:47,986 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:50:47,986 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:50:47,990 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:50:47,991 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:50:47,993 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:50:47,993 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:50:47,993 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:50:47,996 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:50:47,996 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:50:47,996 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:50:47,996 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:50:47,997 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:50:47,998 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:50:48,766 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:50:48,766 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:50:48,766 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:50:48,766 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:50:48,767 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:50:53,786 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:50:54,529 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:50:54,530 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:50:57,760 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:50:57,760 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:50:57,760 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:50:57,760 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:50:57,761 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:50:57,761 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:50:57,762 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:50:57,764 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:50:57,764 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:50:57,764 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:50:57,764 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:50:57,764 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:50:57,764 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:50:57,764 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:50:57,764 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:50:57,765 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:50:58,575 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:50:58,575 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:50:58,576 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:50:59,582 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:51:04,598 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:51:09,535 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:51:09,535 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:51:10,598 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:51:11,017 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:51:11,017 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:51:11,017 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:51:11,017 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:51:11,017 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:51:11,017 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:51:11,020 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:51:11,021 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:51:11,021 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:51:11,162 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: log_artifact
+2023-06-10 00:51:11,164 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: log_artifact
+2023-06-10 00:51:11,172 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-10 00:51:11,172 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:51:11,172 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:51:11,172 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:51:11,172 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:51:11,172 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:51:11,173 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:51:11,173 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:51:11,173 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:51:11,329 INFO    SenderThread:65442 [sender.py:send_request_log_artifact():1414] logged artifact run-t62q0t6i-TableName - {'id': 'QXJ0aWZhY3Q6NDgzMzUzMTEx', 'digest': '5d9e42ded622feb868918190d4a1e7fe', 'state': 'COMMITTED', 'aliases': [{'artifactCollectionName': 'run-t62q0t6i-TableName', 'alias': 'latest'}, {'artifactCollectionName': 'run-t62q0t6i-TableName', 'alias': 'v0'}], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjc1ODIwMzE0', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDgzMzUzMTEx', 'versionIndex': 0}}, 'version': 'v0'}
+2023-06-10 00:51:11,329 DEBUG   SenderThread:65442 [sender.py:send():369] send: files
+2023-06-10 00:51:11,329 INFO    SenderThread:65442 [sender.py:_save_file():1354] saving file media/table/Table Name_1_61e917be0648fc155eef.table.json with policy now
+2023-06-10 00:51:11,330 DEBUG   SenderThread:65442 [sender.py:send():369] send: history
+2023-06-10 00:51:11,330 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: summary_record
+2023-06-10 00:51:11,331 INFO    SenderThread:65442 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-06-10 00:51:11,805 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:51:11,806 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:51:11,806 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:51:11,807 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:51:11,923 INFO    Thread-12 :65442 [dir_watcher.py:_on_file_modified():289] file/dir modified: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/wandb-summary.json
+2023-06-10 00:51:11,923 INFO    Thread-12 :65442 [dir_watcher.py:_on_file_created():272] file/dir created: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/media/table/Table Name_1_61e917be0648fc155eef.table.json
+2023-06-10 00:51:11,923 INFO    Thread-12 :65442 [dir_watcher.py:_on_file_modified():289] file/dir modified: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/media/table
+2023-06-10 00:51:12,810 INFO    wandb-upload_1:65442 [upload_job.py:push():133] Uploaded file /var/folders/lt/lwh95s7519lckh62dtd3s00m0000gp/T/tmpikez46ywwandb/s47je7xj-media/table/Table Name_1_61e917be0648fc155eef.table.json
+2023-06-10 00:51:13,085 INFO    wandb-upload_0:65442 [upload_job.py:push():133] Uploaded file /var/folders/lt/lwh95s7519lckh62dtd3s00m0000gp/T/tmpikez46ywwandb/rak8z3vs-media/table/Table Name_1_61e917be0648fc155eef.table.json
+2023-06-10 00:51:15,834 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:51:20,864 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:51:24,540 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:51:24,541 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:51:26,616 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:51:31,627 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:51:36,641 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:51:39,546 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:51:39,546 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:51:42,629 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:51:47,642 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:51:52,659 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:51:54,550 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:51:54,551 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:51:58,621 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:52:03,637 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:52:08,652 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:52:09,553 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:52:09,554 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:52:14,632 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:52:16,591 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:52:16,592 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:52:16,592 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:52:16,592 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:52:16,592 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:52:16,592 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:52:16,592 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:52:16,594 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:52:16,595 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:52:19,655 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:52:24,560 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:52:24,560 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:52:25,614 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:52:28,809 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: log_artifact
+2023-06-10 00:52:28,809 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: log_artifact
+2023-06-10 00:52:28,967 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: partial_history
+2023-06-10 00:52:28,968 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:52:28,968 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:52:28,968 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:52:28,968 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:52:28,968 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:52:28,968 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:52:28,968 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:52:28,968 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:52:28,968 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:52:28,968 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:52:28,969 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:52:29,253 INFO    Thread-12 :65442 [dir_watcher.py:_on_file_created():272] file/dir created: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/media/table/Table Name_2_ccc1e37a020e1a8af338.table.json
+2023-06-10 00:52:29,253 INFO    Thread-12 :65442 [dir_watcher.py:_on_file_modified():289] file/dir modified: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/media/table
+2023-06-10 00:52:30,998 INFO    wandb-upload_0:65442 [upload_job.py:push():133] Uploaded file /var/folders/lt/lwh95s7519lckh62dtd3s00m0000gp/T/tmpikez46ywwandb/3j5yv868-media/table/Table Name_2_ccc1e37a020e1a8af338.table.json
+2023-06-10 00:52:31,223 INFO    wandb-upload_1:65442 [upload_job.py:push():91] Uploaded file /Users/sjabbireddy/Library/Application Support/wandb/artifacts/staging/tmpza7uosf6
+2023-06-10 00:52:31,803 INFO    SenderThread:65442 [sender.py:send_request_log_artifact():1414] logged artifact run-t62q0t6i-TableName - {'id': 'QXJ0aWZhY3Q6NDgzMzU5MTgy', 'digest': '3ca3cec9f1df057a63d867ad7dd390c8', 'state': 'PENDING', 'aliases': [], 'artifactSequence': {'id': 'QXJ0aWZhY3RDb2xsZWN0aW9uOjc1ODIwMzE0', 'latestArtifact': {'id': 'QXJ0aWZhY3Q6NDgzMzUzMTEx', 'versionIndex': 0}}, 'version': 'latest'}
+2023-06-10 00:52:31,803 DEBUG   SenderThread:65442 [sender.py:send():369] send: files
+2023-06-10 00:52:31,803 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:52:31,803 INFO    SenderThread:65442 [sender.py:_save_file():1354] saving file media/table/Table Name_2_ccc1e37a020e1a8af338.table.json with policy now
+2023-06-10 00:52:31,804 DEBUG   SenderThread:65442 [sender.py:send():369] send: history
+2023-06-10 00:52:31,805 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: summary_record
+2023-06-10 00:52:31,806 INFO    SenderThread:65442 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-06-10 00:52:31,807 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:52:32,267 INFO    Thread-12 :65442 [dir_watcher.py:_on_file_modified():289] file/dir modified: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/wandb-summary.json
+2023-06-10 00:52:32,694 INFO    wandb-upload_0:65442 [upload_job.py:push():133] Uploaded file /var/folders/lt/lwh95s7519lckh62dtd3s00m0000gp/T/tmpikez46ywwandb/92xfvjfk-media/table/Table Name_2_ccc1e37a020e1a8af338.table.json
+2023-06-10 00:52:36,823 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:52:39,566 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:52:39,567 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:52:42,632 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:52:47,653 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:52:52,673 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:52:54,570 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:52:54,571 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:52:58,641 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:53:03,657 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:53:08,677 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:53:09,574 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:53:09,575 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:53:13,266 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:53:13,266 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:53:13,266 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:53:13,266 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:53:13,266 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:53:13,266 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:53:13,267 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:53:13,269 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:53:13,270 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: pause
+2023-06-10 00:53:13,271 INFO    HandlerThread:65442 [handler.py:handle_request_pause():728] stopping system metrics thread or process
+2023-06-10 00:53:13,271 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:53:13,271 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:53:13,271 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:53:13,271 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:53:13,272 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:53:13,272 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:53:13,272 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:53:14,037 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:53:14,038 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:53:14,038 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:53:14,038 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:53:14,038 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:53:19,056 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:53:24,074 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:53:24,575 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:53:24,576 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:53:29,662 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:53:34,685 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:53:39,580 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:53:39,581 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:53:40,632 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:53:45,653 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:53:50,667 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:53:54,584 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:53:54,584 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:53:56,653 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:54:01,672 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:54:06,688 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:54:09,588 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:54:09,589 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:54:12,657 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:54:17,674 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:54:22,695 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:54:24,593 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:54:24,594 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:54:28,666 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:54:33,681 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:54:38,699 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:54:39,597 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:54:39,599 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:54:44,668 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:54:49,682 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:54:54,601 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:54:54,603 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:54:54,687 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:54:59,708 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:55:04,724 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:55:09,606 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: stop_status
+2023-06-10 00:55:09,606 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: stop_status
+2023-06-10 00:55:10,672 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:55:15,691 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:55:20,707 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:55:21,536 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: resume
+2023-06-10 00:55:21,536 INFO    HandlerThread:65442 [handler.py:handle_request_resume():719] starting system metrics thread or process
+2023-06-10 00:55:21,536 INFO    HandlerThread:65442 [system_monitor.py:start():181] Starting system monitor
+2023-06-10 00:55:21,537 INFO    SystemMonitor:65442 [system_monitor.py:_start():145] Starting system asset monitoring threads
+2023-06-10 00:55:21,538 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started cpu monitoring
+2023-06-10 00:55:21,540 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started disk monitoring
+2023-06-10 00:55:21,540 DEBUG   SenderThread:65442 [sender.py:send():369] send: telemetry
+2023-06-10 00:55:21,544 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started gpuapple monitoring
+2023-06-10 00:55:21,544 DEBUG   SenderThread:65442 [sender.py:send():369] send: exit
+2023-06-10 00:55:21,546 INFO    SenderThread:65442 [sender.py:send_exit():574] handling exit code: 0
+2023-06-10 00:55:21,546 INFO    SenderThread:65442 [sender.py:send_exit():576] handling runtime: 63
+2023-06-10 00:55:21,547 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started memory monitoring
+2023-06-10 00:55:21,548 INFO    SystemMonitor:65442 [interfaces.py:start():190] Started network monitoring
+2023-06-10 00:55:21,549 INFO    SenderThread:65442 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-06-10 00:55:21,549 INFO    SenderThread:65442 [sender.py:send_exit():582] send defer
+2023-06-10 00:55:21,550 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: defer
+2023-06-10 00:55:21,550 INFO    HandlerThread:65442 [handler.py:handle_request_defer():170] handle defer: 0
+2023-06-10 00:55:21,550 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: defer
+2023-06-10 00:55:21,551 INFO    SenderThread:65442 [sender.py:send_request_defer():598] handle sender defer: 0
+2023-06-10 00:55:21,551 INFO    SenderThread:65442 [sender.py:transition_state():602] send defer: 1
+2023-06-10 00:55:21,551 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: defer
+2023-06-10 00:55:21,552 INFO    HandlerThread:65442 [handler.py:handle_request_defer():170] handle defer: 1
+2023-06-10 00:55:21,552 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: defer
+2023-06-10 00:55:21,552 INFO    SenderThread:65442 [sender.py:send_request_defer():598] handle sender defer: 1
+2023-06-10 00:55:21,552 INFO    SenderThread:65442 [sender.py:transition_state():602] send defer: 2
+2023-06-10 00:55:21,552 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: defer
+2023-06-10 00:55:21,552 INFO    HandlerThread:65442 [handler.py:handle_request_defer():170] handle defer: 2
+2023-06-10 00:55:21,552 INFO    HandlerThread:65442 [system_monitor.py:finish():190] Stopping system monitor
+2023-06-10 00:55:21,552 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined cpu monitor
+2023-06-10 00:55:21,553 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():159] Starting system metrics aggregation loop
+2023-06-10 00:55:21,553 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined disk monitor
+2023-06-10 00:55:21,553 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():166] Finished system metrics aggregation loop
+2023-06-10 00:55:21,554 DEBUG   SystemMonitor:65442 [system_monitor.py:_start():170] Publishing last batch of metrics
+2023-06-10 00:55:22,028 INFO    Thread-12 :65442 [dir_watcher.py:_on_file_modified():289] file/dir modified: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/wandb-summary.json
+2023-06-10 00:55:22,388 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined gpuapple monitor
+2023-06-10 00:55:22,388 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined memory monitor
+2023-06-10 00:55:22,388 INFO    HandlerThread:65442 [interfaces.py:finish():202] Joined network monitor
+2023-06-10 00:55:22,389 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: defer
+2023-06-10 00:55:22,389 INFO    SenderThread:65442 [sender.py:send_request_defer():598] handle sender defer: 2
+2023-06-10 00:55:22,389 INFO    SenderThread:65442 [sender.py:transition_state():602] send defer: 3
+2023-06-10 00:55:22,389 DEBUG   SenderThread:65442 [sender.py:send():369] send: stats
+2023-06-10 00:55:22,389 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: defer
+2023-06-10 00:55:22,389 INFO    HandlerThread:65442 [handler.py:handle_request_defer():170] handle defer: 3
+2023-06-10 00:55:22,389 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: defer
+2023-06-10 00:55:22,389 INFO    SenderThread:65442 [sender.py:send_request_defer():598] handle sender defer: 3
+2023-06-10 00:55:22,389 INFO    SenderThread:65442 [sender.py:transition_state():602] send defer: 4
+2023-06-10 00:55:22,389 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: defer
+2023-06-10 00:55:22,389 INFO    HandlerThread:65442 [handler.py:handle_request_defer():170] handle defer: 4
+2023-06-10 00:55:22,389 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: defer
+2023-06-10 00:55:22,389 INFO    SenderThread:65442 [sender.py:send_request_defer():598] handle sender defer: 4
+2023-06-10 00:55:22,389 INFO    SenderThread:65442 [sender.py:transition_state():602] send defer: 5
+2023-06-10 00:55:22,389 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: defer
+2023-06-10 00:55:22,389 INFO    HandlerThread:65442 [handler.py:handle_request_defer():170] handle defer: 5
+2023-06-10 00:55:22,389 DEBUG   SenderThread:65442 [sender.py:send():369] send: summary
+2023-06-10 00:55:22,390 INFO    SenderThread:65442 [sender.py:_save_file():1354] saving file wandb-summary.json with policy end
+2023-06-10 00:55:22,391 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: defer
+2023-06-10 00:55:22,391 INFO    SenderThread:65442 [sender.py:send_request_defer():598] handle sender defer: 5
+2023-06-10 00:55:22,391 INFO    SenderThread:65442 [sender.py:transition_state():602] send defer: 6
+2023-06-10 00:55:22,391 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: defer
+2023-06-10 00:55:22,391 INFO    HandlerThread:65442 [handler.py:handle_request_defer():170] handle defer: 6
+2023-06-10 00:55:22,391 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: defer
+2023-06-10 00:55:22,391 INFO    SenderThread:65442 [sender.py:send_request_defer():598] handle sender defer: 6
+2023-06-10 00:55:22,393 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: status_report
+2023-06-10 00:55:22,473 INFO    SenderThread:65442 [sender.py:transition_state():602] send defer: 7
+2023-06-10 00:55:22,473 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: defer
+2023-06-10 00:55:22,473 INFO    HandlerThread:65442 [handler.py:handle_request_defer():170] handle defer: 7
+2023-06-10 00:55:22,473 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: defer
+2023-06-10 00:55:22,473 INFO    SenderThread:65442 [sender.py:send_request_defer():598] handle sender defer: 7
+2023-06-10 00:55:22,547 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-10 00:55:23,034 INFO    Thread-12 :65442 [dir_watcher.py:_on_file_modified():289] file/dir modified: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/wandb-summary.json
+2023-06-10 00:55:23,034 INFO    Thread-12 :65442 [dir_watcher.py:_on_file_modified():289] file/dir modified: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/config.yaml
+2023-06-10 00:55:25,199 INFO    SenderThread:65442 [sender.py:transition_state():602] send defer: 8
+2023-06-10 00:55:25,199 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: poll_exit
+2023-06-10 00:55:25,199 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: defer
+2023-06-10 00:55:25,199 INFO    HandlerThread:65442 [handler.py:handle_request_defer():170] handle defer: 8
+2023-06-10 00:55:25,200 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: defer
+2023-06-10 00:55:25,200 INFO    SenderThread:65442 [sender.py:send_request_defer():598] handle sender defer: 8
+2023-06-10 00:55:25,200 INFO    SenderThread:65442 [job_builder.py:build():232] Attempting to build job artifact
+2023-06-10 00:55:25,201 INFO    SenderThread:65442 [job_builder.py:build():251] run is notebook based run
+2023-06-10 00:55:25,201 INFO    SenderThread:65442 [job_builder.py:build():256] is repo sourced job
+2023-06-10 00:55:25,201 INFO    SenderThread:65442 [sender.py:transition_state():602] send defer: 9
+2023-06-10 00:55:25,201 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: defer
+2023-06-10 00:55:25,201 INFO    HandlerThread:65442 [handler.py:handle_request_defer():170] handle defer: 9
+2023-06-10 00:55:25,201 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: defer
+2023-06-10 00:55:25,202 INFO    SenderThread:65442 [sender.py:send_request_defer():598] handle sender defer: 9
+2023-06-10 00:55:25,202 INFO    SenderThread:65442 [dir_watcher.py:finish():359] shutting down directory watcher
+2023-06-10 00:55:26,043 INFO    Thread-12 :65442 [dir_watcher.py:_on_file_modified():289] file/dir modified: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/output.log
+2023-06-10 00:55:26,044 INFO    SenderThread:65442 [dir_watcher.py:finish():389] scan: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files
+2023-06-10 00:55:26,044 INFO    SenderThread:65442 [dir_watcher.py:finish():403] scan save: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/requirements.txt requirements.txt
+2023-06-10 00:55:26,044 INFO    SenderThread:65442 [dir_watcher.py:finish():403] scan save: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/output.log output.log
+2023-06-10 00:55:26,045 INFO    SenderThread:65442 [dir_watcher.py:finish():403] scan save: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/config.yaml config.yaml
+2023-06-10 00:55:26,045 INFO    SenderThread:65442 [dir_watcher.py:finish():403] scan save: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/wandb-summary.json wandb-summary.json
+2023-06-10 00:55:26,049 INFO    SenderThread:65442 [dir_watcher.py:finish():403] scan save: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/wandb-metadata.json wandb-metadata.json
+2023-06-10 00:55:26,054 INFO    SenderThread:65442 [dir_watcher.py:finish():403] scan save: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/media/table/Table Name_1_61e917be0648fc155eef.table.json media/table/Table Name_1_61e917be0648fc155eef.table.json
+2023-06-10 00:55:26,054 INFO    SenderThread:65442 [dir_watcher.py:finish():403] scan save: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/media/table/Table Name_2_ccc1e37a020e1a8af338.table.json media/table/Table Name_2_ccc1e37a020e1a8af338.table.json
+2023-06-10 00:55:26,054 INFO    SenderThread:65442 [dir_watcher.py:finish():403] scan save: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/media/table/Table Name_0_61e917be0648fc155eef.table.json media/table/Table Name_0_61e917be0648fc155eef.table.json
+2023-06-10 00:55:26,054 INFO    SenderThread:65442 [sender.py:transition_state():602] send defer: 10
+2023-06-10 00:55:26,055 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: defer
+2023-06-10 00:55:26,055 INFO    HandlerThread:65442 [handler.py:handle_request_defer():170] handle defer: 10
+2023-06-10 00:55:26,056 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: defer
+2023-06-10 00:55:26,056 INFO    SenderThread:65442 [sender.py:send_request_defer():598] handle sender defer: 10
+2023-06-10 00:55:26,056 INFO    SenderThread:65442 [file_pusher.py:finish():159] shutting down file pusher
+2023-06-10 00:55:26,344 INFO    wandb-upload_0:65442 [upload_job.py:push():133] Uploaded file /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/output.log
+2023-06-10 00:55:26,581 INFO    wandb-upload_2:65442 [upload_job.py:push():133] Uploaded file /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/config.yaml
+2023-06-10 00:55:26,583 INFO    wandb-upload_1:65442 [upload_job.py:push():133] Uploaded file /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/requirements.txt
+2023-06-10 00:55:26,623 INFO    wandb-upload_3:65442 [upload_job.py:push():133] Uploaded file /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/files/wandb-summary.json
+2023-06-10 00:55:26,829 INFO    Thread-11 (_thread_body):65442 [sender.py:transition_state():602] send defer: 11
+2023-06-10 00:55:26,829 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: defer
+2023-06-10 00:55:26,830 INFO    HandlerThread:65442 [handler.py:handle_request_defer():170] handle defer: 11
+2023-06-10 00:55:26,830 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: defer
+2023-06-10 00:55:26,830 INFO    SenderThread:65442 [sender.py:send_request_defer():598] handle sender defer: 11
+2023-06-10 00:55:26,830 INFO    SenderThread:65442 [file_pusher.py:join():164] waiting for file pusher
+2023-06-10 00:55:26,830 INFO    SenderThread:65442 [sender.py:transition_state():602] send defer: 12
+2023-06-10 00:55:26,831 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: defer
+2023-06-10 00:55:26,831 INFO    HandlerThread:65442 [handler.py:handle_request_defer():170] handle defer: 12
+2023-06-10 00:55:26,832 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: defer
+2023-06-10 00:55:26,832 INFO    SenderThread:65442 [sender.py:send_request_defer():598] handle sender defer: 12
+2023-06-10 00:55:27,074 INFO    SenderThread:65442 [sender.py:transition_state():602] send defer: 13
+2023-06-10 00:55:27,075 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: defer
+2023-06-10 00:55:27,075 INFO    HandlerThread:65442 [handler.py:handle_request_defer():170] handle defer: 13
+2023-06-10 00:55:27,076 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: defer
+2023-06-10 00:55:27,076 INFO    SenderThread:65442 [sender.py:send_request_defer():598] handle sender defer: 13
+2023-06-10 00:55:27,076 INFO    SenderThread:65442 [sender.py:transition_state():602] send defer: 14
+2023-06-10 00:55:27,077 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: defer
+2023-06-10 00:55:27,077 INFO    HandlerThread:65442 [handler.py:handle_request_defer():170] handle defer: 14
+2023-06-10 00:55:27,078 DEBUG   SenderThread:65442 [sender.py:send():369] send: final
+2023-06-10 00:55:27,078 DEBUG   SenderThread:65442 [sender.py:send():369] send: footer
+2023-06-10 00:55:27,079 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: defer
+2023-06-10 00:55:27,079 INFO    SenderThread:65442 [sender.py:send_request_defer():598] handle sender defer: 14
+2023-06-10 00:55:27,081 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: poll_exit
+2023-06-10 00:55:27,081 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: server_info
+2023-06-10 00:55:27,081 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: get_summary
+2023-06-10 00:55:27,082 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: sampled_history
+2023-06-10 00:55:27,087 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: poll_exit
+2023-06-10 00:55:27,088 DEBUG   SenderThread:65442 [sender.py:send_request():396] send_request: server_info
+2023-06-10 00:55:27,137 DEBUG   HandlerThread:65442 [handler.py:handle_request():144] handle_request: shutdown
+2023-06-10 00:55:27,138 INFO    HandlerThread:65442 [handler.py:finish():854] shutting down handler
+2023-06-10 00:55:28,086 INFO    WriterThread:65442 [datastore.py:close():298] close: /Users/sjabbireddy/mlops-project/wandb/run-20230610_003238-t62q0t6i/run-t62q0t6i.wandb
+2023-06-10 00:55:28,137 INFO    SenderThread:65442 [sender.py:finish():1526] shutting down sender
+2023-06-10 00:55:28,137 INFO    SenderThread:65442 [file_pusher.py:finish():159] shutting down file pusher
+2023-06-10 00:55:28,137 INFO    SenderThread:65442 [file_pusher.py:join():164] waiting for file pusher

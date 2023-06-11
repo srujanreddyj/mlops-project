@@ -1,0 +1,24 @@
+/Users/sjabbireddy/.pyenv/versions/3.10.0/lib/python3.10/site-packages/tqdm/auto.py:21: TqdmWarning: IProgress not found. Please update jupyter and ipywidgets. See https://ipywidgets.readthedocs.io/en/stable/user_install.html
+  from .autonotebook import tqdm as notebook_tqdm
+Loaded Dataset train
+Loaded Dataset test_mini
+Loaded Dataset augment
+Example train row:
+{'description': 'A capsule carrying solar material from the Genesis space '
+                'probe has made a crash landing at a US Air Force training '
+                'facility in the US state of Utah.',
+ 'id': 86273,
+ 'label': 'Entertainment',
+ 'source': 'Voice of America',
+ 'title': 'Capsule from Genesis Space Probe Crashes in Utah Desert',
+ 'url': 'http://www.sciencedaily.com/releases/2004/09/040908090621.htm'}
+Example test row:
+{'description': "AP - Denny Neagle's contract was terminated by the Colorado "
+                'Rockies on Monday, three days after the oft-injured pitcher '
+                'was cited for solicitation.',
+ 'id': 116767,
+ 'label': 'Sports',
+ 'source': 'Yahoo Sports',
+ 'title': "Rockies Terminate Neagle's Contract (AP)",
+ 'url': 'http://us.rd.yahoo.com/dailynews/rss/sports/*http://story.news.yahoo.com/news?tmpl=story2 '
+        'u=/ap/20041207/ap_on_sp_ba_ne/bbn_rockies_neagle'}

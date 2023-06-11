@@ -1,0 +1,33 @@
+{
+    "os": "macOS-13.4-arm64-arm-64bit",
+    "python": "3.10.0",
+    "heartbeatAt": "2023-06-10T06:39:35.797224",
+    "startedAt": "2023-06-10T06:39:35.293988",
+    "docker": null,
+    "cuda": null,
+    "args": null,
+    "state": "running",
+    "program": "<python with no main file>",
+    "git": {
+        "remote": "https://github.com/srujanreddyj/mlops-project.git",
+        "commit": "346f619558218954fed04fdc3c6990123b83dcd9"
+    },
+    "email": "jsrujanreddy@gmail.com",
+    "root": "/Users/sjabbireddy/mlops-project",
+    "host": "W2N6QX6RWR",
+    "username": "sjabbireddy",
+    "executable": "/Users/sjabbireddy/.pyenv/versions/3.10.0/bin/python",
+    "cpu_count": 10,
+    "cpu_count_logical": 10,
+    "disk": {
+        "total": 460.4317207336426,
+        "used": 8.443897247314453
+    },
+    "gpuapple": {
+        "type": "arm",
+        "vendor": "Apple"
+    },
+    "memory": {
+        "total": 32.0
+    }
+}
