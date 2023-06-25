@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from pydantic import BaseModel
 from loguru import logger
+import logging
 
 from classifier import NewsCategoryClassifier
 
@@ -34,6 +35,19 @@ def startup_event():
     Access to the model instance and log file will be needed in /predict endpoint, make sure you
     store them as global variables
     """
+    global log_file
+    global classifier_model
+
+    classifier_model = NewsCategoryClassifier()
+    classifier_model.load(model_path=MODEL_PATH)
+    
+
+    # Create a file to write logs to a file
+    log_file = open(LOGS_OUTPUT_PATH, 'a+')
+    # logger.setFormatter(logging.Formatter("%(asctime)s:%(levelname)s: %(message)s"))
+    # logger.addHandler(log_file)
+    logger.info("Logger initialized")
+
     logger.info("Setup completed")
 
 
@@ -45,6 +59,7 @@ def shutdown_event():
     1. Make sure to flush the log file and close any file pointers to avoid corruption
     2. Any other cleanups
     """
+    log_file.close()
     logger.info("Shutting down application")
 
 
@@ -65,7 +80,33 @@ def predict(request: PredictRequest):
     }
     3. Construct an instance of `PredictResponse` and return
     """
-    response = PredictResponse(scores={"label1": 0.9, "label2": 0.1}, label="label1")
+    import time
+    import json
+    import datetime
+
+    time_initiated = datetime.datetime.now()
+    start = time.time()
+    pred = classifier_model.predict_label(request)
+    probs = classifier_model.predict_proba(request)
+    response = PredictResponse(scores=probs, label=pred)
+    end = time.time()
+    elapsed = (end-start) * 1000
+
+    log_info = {
+        'timestamp': time_initiated.strftime("%Y:%m:%d %H:%M:%S"),
+        'request': request,
+        'prediction': response,
+        'latency': elapsed
+    }   
+
+    # log_file.write(f'{json.dumps(log_info)}\n')
+    log_file.write(str(log_info))
+    log_file.write('\n')
+    log_file.flush()
+    logger.info(log_info)
+
+    # response = PredictResponse(scores={"label1": 0.9, "label2": 0.1}, label="label1")
+
     return response
 
 
