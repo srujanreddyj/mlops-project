@@ -88,6 +88,16 @@ jobs:
       run: |
         echo "Hello=true"
 
+  deploy_prod2:
+    name: Deploy / PROD2
+    needs: deploy_sand1, deploy_qa1
+    runs-on: ubuntu-latest
+    steps:
+    - name: test
+      id: test
+      run: |
+        echo "Hello=true"
+
   no-deploy:
     needs: build-changes
     if: needs.build-changes.outputs.status == 'false'
