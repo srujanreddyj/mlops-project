@@ -52,11 +52,21 @@ jobs:
     name: Deploy / SANDBOX
     needs: deploy_dev
     runs-on: ubuntu-latest
+    steps:
+    - name: test
+      id: test
+      run: |
+        echo "Hello=true"
 
   deploy_qa:
     name: Deploy / QA
     needs: deploy_dev
     runs-on: ubuntu-latest
+    steps:
+    - name: test
+      id: test
+      run: |
+        echo "Hello=true"
 
   no-deploy:
     needs: build-changes
