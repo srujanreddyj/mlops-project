@@ -90,7 +90,7 @@ jobs:
 
   deploy_prod2:
     name: Deploy / PROD2
-    needs: deploy_sand1, deploy_qa1
+    needs: [deploy_sand1, deploy_qa1]
     runs-on: ubuntu-latest
     steps:
     - name: test
