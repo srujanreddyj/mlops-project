@@ -1,0 +1,64 @@
+# This workflow will build a golang project
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-go
+
+name: Go
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+
+  # build:
+  #   runs-on: ubuntu-latest
+  #   steps:
+  #   - uses: actions/checkout@v3
+
+  #   - name: Set up Go
+  #     uses: actions/setup-go@v4
+  #     with:
+  #       go-version: '1.21.0'
+
+  #   - name: Build
+  #     run: go build -v ./...
+
+  #   - name: Test
+  #     run: go test -v ./...
+
+  build-changes:
+    outputs:
+      Hello: ${{steps.test.output.hello}}
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        results: [0,1]
+    steps:
+    - uses: actions/checkout@v4
+    - name: test
+      id: test
+      run: |
+        echo "Hello=true" >> $GITHUB_OUTPUT
+        
+      
+
+  deploy-dev:
+    needs: build-changes
+    if: needs.build-changes.outputs.hello != 'true'
+    runs-on: ubuntu-latest
+    steps:
+    - name: test
+      id: test
+      run: |
+        echo "Hello=true"
+
+  no-deploy:
+    needs: build-changes
+    if: needs.build-changes.outputs.status == 'false'
+    runs-on: ubuntu-latest
+    steps:
+    - name: test
+      id: test
+      run: |
+        echo "Hello=true"
