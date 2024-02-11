@@ -31,9 +31,6 @@ jobs:
     outputs:
       Hello: ${{steps.test.output.hello}}
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        results: [0,1]
     steps:
     - uses: actions/checkout@v4
     - name: test
@@ -41,8 +38,6 @@ jobs:
       run: |
         echo "Hello=true" >> $GITHUB_OUTPUT
         
-      
-
   deploy-dev:
     needs: build-changes
     if: needs.build-changes.outputs.hello != 'true'
