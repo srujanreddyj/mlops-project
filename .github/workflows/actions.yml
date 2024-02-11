@@ -48,8 +48,8 @@ jobs:
       run: |
         echo "Hello=true"
 
-  deploy_sand:
-    name: Deploy / SANDBOX
+  deploy_sand1:
+    name: Deploy / SANDBOX1
     needs: deploy_dev
     runs-on: ubuntu-latest
     steps:
@@ -58,9 +58,29 @@ jobs:
       run: |
         echo "Hello=true"
 
-  deploy_qa:
+  deploy_qa1:
     name: Deploy / QA
     needs: deploy_dev
+    runs-on: ubuntu-latest
+    steps:
+    - name: test
+      id: test
+      run: |
+        echo "Hello=true"
+
+  deploy_qa2:
+    name: Deploy / QA2
+    needs: deploy_qa1
+    runs-on: ubuntu-latest
+    steps:
+    - name: test
+      id: test
+      run: |
+        echo "Hello=true"
+
+  deploy_sand2:
+    name: Deploy / SAND2
+    needs: deploy_sand1
     runs-on: ubuntu-latest
     steps:
     - name: test
