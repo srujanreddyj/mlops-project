@@ -1,0 +1,98 @@
+name: DATABASE-CI/CD-ALL-ENV
+
+on:
+  workflow_dispatch: # To manually trigger the workflow
+  push: # Automatically trigger on push
+    branches:
+      - main
+  # pull_request: # Automatically trigger on pull request
+
+env:
+  commit: ${{ github.sha }}
+
+jobs:
+  check-changes:
+    runs-on: ubuntu-latest
+    outputs:
+      id: file_changes
+      all_changed_files: ${{ steps.changed-files-specific.outputs.all_changed_files }}
+    steps:
+      - name: Check out code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # OR "2" -> To retrieve the preceding commit.
+
+      - name: Get modified SQL files
+        id: changed-files-specific
+        uses: tj-actions/changed-files@v41
+        with:
+          files: |
+            **.sql
+          write_output_files: true
+
+      - name: Print the modified files
+        run: |
+          echo "${{ steps.changed-files-specific.outputs.all_changed_files }}"
+  deploy_dev:
+    name: Deploy / DEV
+    needs: check-changes
+    if: needs.check-changes.outputs.all_changed_files != ''
+    uses: uShip/sql-db-migrations/.github/workflows/action.yml@main
+    with:
+      environment: 'dev'
+    secrets:
+      DB_SERVER: ${{ secrets.DEV_DB_SERVER }}
+      DATABASE: ${{ secrets.DEV_DATABASE }}
+      USERNAME: ${{ secrets.DEV_DB_USER }}
+      PASSWORD: ${{ secrets.DEV_DB_PASS }}
+      SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+  deploy_sand:
+    name: Deploy / SANDBOX
+    needs: deploy_dev
+    uses: uShip/sql-db-migrations/.github/workflows/action.yml@main
+    with:
+      environment: 'sandbox'
+    secrets:
+      DB_SERVER: ${{ secrets.SAND_DB_SERVER }}
+      DATABASE: ${{ secrets.SAND_DATABASE }}
+      USERNAME: ${{ secrets.SAND_DB_USER }}
+      PASSWORD: ${{ secrets.SAND_DB_PASS }}
+      SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+  deploy_qa:
+    name: Deploy / QA
+    needs: deploy_dev
+    uses: uShip/sql-db-migrations/.github/workflows/action.yml@main
+    with:
+      environment: 'qa'
+    secrets:
+      DB_SERVER: ${{ secrets.QA_DB_SERVER }}
+      DATABASE: ${{ secrets.QA_DATABASE }}
+      USERNAME: ${{ secrets.QA_DB_USER }}
+      PASSWORD: ${{ secrets.QA_DB_PASS }}
+      SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+  deploy_production:
+      name: Deploy / Production
+      needs: [deploy_sand, deploy_qa]
+      uses: uShip/sql-db-migrations/.github/workflows/action.yml@main
+      with:
+        environment: 'prod'
+      secrets:
+        DB_SERVER: ${{ secrets.PROD_DB_SERVER }}
+        DATABASE: ${{ secrets.PROD_DATABASE }}
+        USERNAME: ${{ secrets.PROD_DB_USER }}
+        PASSWORD: ${{ secrets.PROD_DB_PASS }}
+        SLACK_WEBHOOK: ${{ secrets.SLACK_WEBHOOK_URL }}
+
+  notify-new-files:
+    name: No SQL Changes
+    needs: check-changes
+    runs-on: ubuntu-latest
+    if: needs.check-changes.outputs.all_changed_files == ''
+    steps:
+      - name: Notify on new files
+        run: |
+          echo "New files have been pushed to the repository. Add your notification logic here."
+Add
